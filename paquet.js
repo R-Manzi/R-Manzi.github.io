@@ -1,3 +1,9 @@
+
+
+
+
+let resultat = document.querySelector('#carte')
+
 const FIGURES = ['♦','♣','♥','♠']
 const VALEURS = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 
@@ -16,18 +22,26 @@ class Carte {
         this.figure = figure
         this.valeur = valeur
 
+
     }
 }
 
-function nouveauPaquet(){
+function nouveauPaquet(){ 
+    
     return FIGURES.flatMap(figure => {
         return VALEURS.Map(valeur => {
-            return new Carte(figure,valeur)
+            console.log(figure +''+ valeur)
+            /*return new Carte(figure,valeur)*/
+           
         })
 
 
     })
 
 }
+
 const paquet = new Paquet()
 console.log(paquet.cartes)
+
+resultat.innerHTML = (paquet.cartes)
+document.querySelector('#brasser').addEventListener('click',Paquet)
