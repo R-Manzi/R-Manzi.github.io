@@ -1,137 +1,70 @@
-
-  /*
-  ========================================
-  section mise en page..... rows
-  ========================================
-*/
-
-body {
-  background: #383d41;
-  margin: 1;
-  
- 
-
+body{
+  font-family: Arial, Helvetica, sans-serif ;
+  text-align: center;
 }
-.primary-header a,
-  .primary-footer a {
-    color: #fff;
-
-  }
-
-.hero {
-  color: rgb(255, 255, 255);
-  line-height: 44px;
-  padding: 22px 80px 66px 80px;
-  text-align-last: center;
+script{
+  display: none;
 }
-
-.row-alt {
-  min-width: 960px;
-  min-height: 960px;
-
- 
-
+.left {
+  height:960px;
+  width: 30%;
+  background-color: rgb(12, 48, 83);
+  float:left
 }
-.row-alt {
-  background: #d8dde9;
-}
-
-.flex-container {
-  display: flex;
-  background-color: transparent;
+.left img {
+  padding-top: 200px;
+  height:530px ;
   
 }
-/*.flex-container div {
-  background-color: #f1f1f1;
-  margin: 10px;
+
+.right {
+  height : 960px;
+  width: 70%;
+  float: right
   
-  padding: 15px;
-  font-size: 20px;
-  font-family: 'Lato';
-  text-align: justify; 
-  */
-
-
-  /*
-  ========================================
-  section button..... rows
-  ========================================
+}
+/*
+========================================
+section button..... rows
+========================================
 */
 
 button{
+  width: 150px;
+  height: 40px;
+  font-size:20px ;
   border-radius: 5px;
   color: rgb(185, 115, 115);
   cursor: pointer;
   display: inline-block;
   letter-spacing: .5px;
-  margin: 3px;
+  margin: 10px;
   text-transform: uppercase;
-
   float:center;
-
-
-
 }
 
-
-  /*
-  ========================================
-  section carte.....
-  ========================================
+/*
+========================================
+section button..... rows
+========================================
 */
-
-*, ::after,*::before{
-  box-sizing: border-box;
+#partDeck1 img {
+  height:175px;
+  width: 125px;
+  margin: 1;
 }
-
-.paquet {
-  height: 100%;
-  width: 100%;
-  border:1px solid black;
-  
+#partdeck2 img {
+  height:175px;
+  width: 125px;
+  margin: 1;
 }
-
-
-
-.quater{
-    width:40px;
-    height:60px;
-    border:1px solid #151718;
-    float:left;
-    margin-right:5px;
-    margin-bottom:5px;
-    border-radius:2px;
-    font-family:courier;
-    cursor:pointer;
-  }
-  
-  span.number, span.suit{
-    width:100%;
-    display:block;
-    text-align:center;
-    padding-top:8px;
-  }
-  
-  .paquet{
-    padding:10px;
+#partdeck3 img {
+  height:175px;
+  width: 125px;
+  margin: 1;
 }
-
-.paquet img{
-    width:80px;
-    height:100px;
-    padding:2px;
+#partdeck4 img {
+  height:175px;
+  width: 125px;
+  margin: 1;
 }
-
-
-.deck .card
-{
-    border: solid 1px #aaa;
-    border-radius: 9px;
-    width: 95px;
-    height: 150px;
-    float:left;
-    background-color: white;
-    padding: 3px 3px 3px 3px;
-    margin: 5px;
-}
-
