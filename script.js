@@ -40,10 +40,7 @@ class Paquet {
         
     }
 
-
-
-
-    }
+    
     assamblage () {
         this.cards = []
         for (let suit in SUITS){
@@ -56,32 +53,30 @@ class Paquet {
         let i = 0;
         let j = 0;
         while (i < 4){
-            assamblage.innerHTML = "div>"
+            assamblage.innerHTML += "<div>"
             i++;
+
             while (j < 13){
-                assamblage.innerHTML += '<img scr = "' + images[13*i+j] + '" />';
+                assamblage.innerHTML +='<img scr = "' + Image[13*(i+j)] + '" />';
                 j++;
+            
             assamblage.innerHTML = "</div>";}}
-
-            }
-        }
-
-    
-
+            
 
     }
-  
+    
+
+        
+}       
+
+
+
 
 class Carte {
     constructor(figure, value) {
         this.figure = figure
         this.value = value  
     }
-
-
-
-
-
 
 }
 
@@ -92,15 +87,10 @@ function nouveauPaquet() {
         })
     })
 
-
-
-
 }
 
-
-    
-
-
+const button = document.getElementById("shuffle")
+button.addEventListener("click",shuffle);
 const deck = new Paquet()
 deck.shuffle()
 deck.assamblage()
