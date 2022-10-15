@@ -52,26 +52,31 @@ section button..... rows
 table{
   display: flex;
 }
-#Deck1 {
-  height:175px;
-  width: 125px;
-  margin: 1;
+#decks {
+  height:75px;
+  width: 55px;
+  display: flex;
+  padding-left: 30px;
+  
 }
-#partdeck2 img {
-  height:175px;
-  width: 125px;
-  margin: 1;
+#decks1{
+  height:75px;
+  width: 55px;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 20px;
 }
-#partdeck3 img {
-  height:175px;
-  width: 125px;
-  margin: 1;
+#decks2 {
+  height:75px;
+  width: 55px;
+  display: flex;
+  padding-left: 30px;
 }
-#partdeck4 img {
-  height:175px;
-  width: 125px;
-  margin: 1;
+#decks3 {
+  height:75px;
+  width: 55px;
+  display: flex;
+  padding-left: 30px;
 }
-
 
 

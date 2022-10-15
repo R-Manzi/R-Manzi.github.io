@@ -49,19 +49,28 @@ class Paquet {
             }
         }
         let assamblage = document.getElementById('decks');
-        assamblage.innerHTML = " ";
+        let assamblage_2 = document.getElementById('decks1')
+        assamblage.innerHTML =" ";
+        assamblage_2.innerHTML =" ";
         let i = 0;
         let j = 0;
-        while (i < 4){
-            assamblage.innerHTML += "<div>"
-            i++;
-
-            while (j < 13){
-                assamblage.innerHTML +='<img src="png/' + this.cards[13] + '.png.png" />';
+        let k = 0;
+        while (k < 4 ){
+            while (i < SUITS.length) {
+                assamblage.innerHTML += "<a>"
+                assamblage_2.innerHTML += "<a>"
+                i++;
+                while (j < 13){
+                    assamblage.innerHTML +='<img src="png/' + this.cards[13*i+j] + '.png.png" />'+ "&emsp;"
+                    assamblage_2.innerHTML +='<img src="png/' + this.cards[26*i+j] + '.png.png" />'+ "&emsp;" 
+ 
                 j++;
-            }
-            
-        
+            k++;
+    
+        }   
+    }
+  
+    
  
     }
     
@@ -69,8 +78,7 @@ class Paquet {
     }
     
 }
-        
-
+    
 
 class Carte {
     constructor(figure, value) {
@@ -80,17 +88,16 @@ class Carte {
 
 }
 
+function nouveauPaquet() {
+    cards = []
+    for (let suit in SUITS){
+        for (let value in VALUES) {
+            cards.push(`${VALUES[value]}${SUITS[suit]}`)
+        }
+    return cards    
+        }
+    }
 
-
-
-function nouveauPaquet() { 
-    return SUITS.flatMap(figure => {
-        return VALUES.map(valeur => {
-            return new Carte (valeur,figure)
-        })
-    })
-
-}
 
 const button = document.getElementById("shuffle")
 button.addEventListener("click",shuffle);
@@ -98,6 +105,9 @@ const deck = new Paquet()
 deck.shuffle()
 deck.assamblage()
 console.log(deck.cards)
+const cartes_sep2 = document.querySelector("#deck2").
+cartes_sep2.innerHTML= deck.cards.slice(13,26).assamblage()
+
 
 /*
 const carte_sep1 = document.querySelector("#deck1")
