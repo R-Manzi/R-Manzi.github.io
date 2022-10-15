@@ -57,7 +57,7 @@ class Paquet {
             i++;
 
             while (j < 13){
-                assamblage.innerHTML +='<img src="png/' + this.cards[13*i+j] + '.png" />';
+                assamblage.innerHTML +='<img src="png/' + this.cards[13] + '.png.png" />';
                 j++;
             }
             
