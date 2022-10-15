@@ -48,10 +48,14 @@ class Paquet {
                 this.cards.push(`${VALUES[value]}${SUITS[suit]}`)
             }
         }
-        let assamblage = document.getElementById('decks');
-        let assamblage_2 = document.getElementById('decks1')
+        const assamblage = document.getElementById('decks');
+        const assamblage_2 = document.getElementById('decks1')
+        const assamblage_3 = document.getElementById('decks2')
+        const assamblage_4 = document.getElementById('decks3')
         assamblage.innerHTML =" ";
         assamblage_2.innerHTML =" ";
+        assamblage_3.innerHTML =" ";
+        assamblage_4.innerHTML =" ";
         let i = 0;
         let j = 0;
         let k = 0;
@@ -59,10 +63,16 @@ class Paquet {
             while (i < SUITS.length) {
                 assamblage.innerHTML += "<a>"
                 assamblage_2.innerHTML += "<a>"
+                assamblage_3.innerHTML += "<a>"
+                assamblage_4.innerHTML += "<a>"
                 i++;
                 while (j < 13){
-                    assamblage.innerHTML +='<img src="png/' + this.cards[13*i+j] + '.png.png" />'+ "&emsp;"
-                    assamblage_2.innerHTML +='<img src="png/' + this.cards[26*i+j] + '.png.png" />'+ "&emsp;" 
+                    assamblage.innerHTML +='<img src="png/' + this.cards[0*i+j] + '.png.png" />'+ "&emsp;"
+                    assamblage_2.innerHTML +='<img src="png/' + this.cards[13*i+j] + '.png.png" />'+ "&emsp;" 
+                    assamblage_3.innerHTML +='<img src="png/' + this.cards[26*i+j] + '.png.png" />'+ "&emsp;"
+                    assamblage_4.innerHTML +='<img src="png/' + this.cards[39*i+j] + '.png.png" />'+ "&emsp;" 
+ 
+
  
                 j++;
             k++;

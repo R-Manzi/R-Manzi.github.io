@@ -71,12 +71,14 @@ table{
   width: 55px;
   display: flex;
   padding-left: 30px;
+  padding-top: 20px;
 }
 #decks3 {
   height:75px;
   width: 55px;
   display: flex;
   padding-left: 30px;
+  padding-top: 20px;
 }
 
 
