@@ -1,4 +1,4 @@
-/*document.querySelector("#reset").addEventListener("click",reset)**/
+
 document.querySelector("#shuffle").addEventListener("click",shuffle)
 
 const SUITS = ['♦','♣','♥','♠']
@@ -49,7 +49,7 @@ class Paquet {
             }
         }
         let assamblage = document.getElementById('decks');
-        assamblage.innerHTML = "";
+        assamblage.innerHTML = " ";
         let i = 0;
         let j = 0;
         while (i < 4){
@@ -57,19 +57,19 @@ class Paquet {
             i++;
 
             while (j < 13){
-                assamblage.innerHTML +='<img scr = "' + Image[13*(i+j)] + '" />';
+                assamblage.innerHTML +='<img src="png/' + this.cards[13*i+j] + '.png" />';
                 j++;
+            }
             
-            assamblage.innerHTML = "</div>";}}
-            
-
+        
+ 
     }
     
 
+    }
+    
+}
         
-}       
-
-
 
 
 class Carte {
@@ -80,10 +80,13 @@ class Carte {
 
 }
 
+
+
+
 function nouveauPaquet() { 
     return SUITS.flatMap(figure => {
         return VALUES.map(valeur => {
-            return new Carte (figure,valeur)
+            return new Carte (valeur,figure)
         })
     })
 
@@ -94,20 +97,38 @@ button.addEventListener("click",shuffle);
 const deck = new Paquet()
 deck.shuffle()
 deck.assamblage()
-
 console.log(deck.cards)
 
-
 /*
-cardDiv = document.createElement("div")
-cardDiv.innerText = this.suit
-cardDiv.classList.add("card", this.color)
-cardDiv.dataset.value = `${this.value} ${this.suit}`
+const carte_sep1 = document.querySelector("#deck1")
+carte_sep1.innerHTML = deck.cards.slice(0,13)
+let i = 0
+let j = 0
+while (i < SUITS.length){
+    carte_sep1.innerHTML += "<tr>"
+    i++;
+   
+    for( let j=0; j<14; j++){
+        let img =  document.createElement("img");
+        img.src = "png/'.png" + this.cards[i] + "";
+        carte_sep1.innerHTML += img + '/>';
+
+    document.getElementById("#decks").appendChild(img)}}
+
+    
+
+
+
+const cartes_sep2 = document.querySelector("#deck2")
+const cartes_sep3 = document.querySelector("#deck3")
+const cartes_sep4 = document.querySelector("#deck4")
+carte_sep1.innerHTML = deck.cards.slice(0,13)
+cartes_sep2.innerHTML= deck.cards.slice(13,26)
+cartes_sep3.innerHTML= deck.cards.slice(26,39)
+cartes_sep4.innerHTML = deck.cards.slice(39,52)
+    
+
 */
-
-
-
-
 
 
 

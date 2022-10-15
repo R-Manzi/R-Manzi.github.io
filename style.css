@@ -48,7 +48,11 @@ button{
 section button..... rows
 ========================================
 */
-#partDeck1 img {
+
+table{
+  display: flex;
+}
+#Deck1 {
   height:175px;
   width: 125px;
   margin: 1;
@@ -68,3 +72,6 @@ section button..... rows
   width: 125px;
   margin: 1;
 }
+
+
+
