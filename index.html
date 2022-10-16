@@ -3,7 +3,8 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-<title>Title of the document</title>
+    <title>Labo Jeu Carte</title>
+    <link rel="icon" type="image/x-icon" href="/other.images/pngegg (3).png">
 </head>
 
 <body>
@@ -11,17 +12,19 @@
         <img src="/other.images/pngegg (1).png">
     </section>
 
-    <sections class = 'right'>
-        <div id="button">
-            <h2>Brassage intercroisee</h2>
-            <button onlick = "shuffle()" id="shuffle">Shuffle</button>
+    <sections class ='right'>
+        <div class="button">
+            <h2>Brassage inter-croisé</h2>
         </div>
-
-        <div id="carte">
+        <div>
             <a id="decks"></a>
             <a id="decks1"></a>
             <a id="decks2"></a>
             <a id="decks3"></a>
+        </div>
+        <div>
+            <button onlick = "shuffle()" id="shuffle">Shuffle</button>
+            <button onlick = "reset()" id="reset">reset</button>
         </div>
     
     </section>

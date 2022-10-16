@@ -49,9 +49,7 @@ section button..... rows
 ========================================
 */
 
-table{
-  display: flex;
-}
+
 #decks {
   height:75px;
   width: 55px;

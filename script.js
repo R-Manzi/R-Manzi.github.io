@@ -1,5 +1,4 @@
 
-document.querySelector("#shuffle").addEventListener("click",shuffle)
 
 const SUITS = ['♦','♣','♥','♠']
 const VALUES = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
@@ -80,10 +79,11 @@ class Paquet {
     
         }  
     }
-
-    shuffleAssembly () {
-        const assembly = deck.shuffle()
-        console.log(assembly)
+    
+  
+        
+    shuffleAssembly (paquet) {
+        const assembly = paquet.shuffle()
         const assamblage = document.getElementById('decks');
         const assamblage_2 = document.getElementById('decks1')
         const assamblage_3 = document.getElementById('decks2')
@@ -115,24 +115,14 @@ class Paquet {
     
         }   
     }
+    
 
     }
   
     
  
-    }
-    
+}
 
-    }
-    
-
-    
-
-class Carte {
-    constructor(figure, value) {
-        this.figure = figure
-        this.value = value  
-    }
 
 }
 
@@ -148,46 +138,18 @@ function nouveauPaquet() {
 
 
 
-const button = document.getElementById("shuffle")
-button.addEventListener("click",shuffle);
 
 let deck = new Paquet()
+let deck2= deck
 deck.assamblage()
-deck.shuffleAssembly()
-let deck2 = deck.shuffle()
-console.log(deck)
-
+deck2.shuffleAssembly(deck)
 
 /*
-const carte_sep1 = document.querySelector("#deck1")
-carte_sep1.innerHTML = deck.cards.slice(0,13)
-let i = 0
-let j = 0
-while (i < SUITS.length){
-    carte_sep1.innerHTML += "<tr>"
-    i++;
-   
-    for( let j=0; j<14; j++){
-        let img =  document.createElement("img");
-        img.src = "png/'.png" + this.cards[i] + "";
-        carte_sep1.innerHTML += img + '/>';
+const mybutton = document.getElementById("decks");
+const mybutton2 = document.getElementById("reset")
+mybutton.addEventListener("click",deck2.shuffleAssembly(deck));
+mybutton2.addEventListener("click",deck.assamblage());*/
 
-    document.getElementById("#decks").appendChild(img)}}
-
-    
-
-
-
-const cartes_sep2 = document.querySelector("#deck2")
-const cartes_sep3 = document.querySelector("#deck3")
-const cartes_sep4 = document.querySelector("#deck4")
-carte_sep1.innerHTML = deck.cards.slice(0,13)
-cartes_sep2.innerHTML= deck.cards.slice(13,26)
-cartes_sep3.innerHTML= deck.cards.slice(26,39)
-cartes_sep4.innerHTML = deck.cards.slice(39,52)
-    
-
-*/
 
 
 
