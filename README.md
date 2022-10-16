@@ -13,7 +13,6 @@ support
 class;
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-https://javascript.info/class
 
 images
 all images ‘downloaded online’ , format.png
@@ -23,7 +22,7 @@ ressource scolaire, le web
 
 état du projet
 
-les méthodes en javascript pour brasser le jeu de carte sont complétés mais , il manque faire le lien entrer le méthodes et la page. 
+les méthodes en javascript pour brasser le jeu de carte sont complétés mais , il manque ; faire le lien entre les méthodes et la page. 
 toujours en construction !
 
 
