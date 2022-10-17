@@ -18,6 +18,11 @@ class Paquet {
 
     }
 
+    affiche()
+    {
+        document.getElementById("#click").innerHTML = "hi"
+    }
+
     
     shuffle() {
         const newPaquet = []
@@ -37,7 +42,6 @@ class Paquet {
         
     }
 
- 
     
     assamblage () {
         this.cards = []
@@ -82,8 +86,8 @@ class Paquet {
     
   
         
-    shuffleAssembly (paquet) {
-        const assembly = paquet.shuffle()
+    shuffleAssembly () {
+        const assembly = deck.shuffle()
         const assamblage = document.getElementById('decks');
         const assamblage_2 = document.getElementById('decks1')
         const assamblage_3 = document.getElementById('decks2')
@@ -148,8 +152,8 @@ deck2.shuffleAssembly(deck)
 const mybutton = document.getElementById("decks");
 const mybutton2 = document.getElementById("reset")
 mybutton.addEventListener("click",deck2.shuffleAssembly(deck));
-mybutton2.addEventListener("click",deck.assamblage());*/
-
+mybutton2.addEventListener("click",deck.assamblage());
+*/
 
 
 

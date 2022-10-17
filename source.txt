@@ -3,14 +3,15 @@
 class;
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-https://javascript.info/class
 
 
 
 
-images
+images:
 all images download online
 
 
+
+labotoire fait enclasse ; le brassage
  */
 
